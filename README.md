@@ -1,45 +1,149 @@
-# Pandas-Data-Science-Tasks
-Set of real world data science tasks completed using the Python Pandas library.
+# 📊 Sales Analysis Project
 
-## Setup
+## 🚀 Project Overview
 
-To access all of the files I recommend you fork this repo and then clone it locally. Instructions on how to do this can be found here: https://help.github.com/en/github/getting-started-with-github/fork-a-repo
+This project analyzes one year of sales data from an electronics store to uncover trends and generate actionable business insights. The analysis focuses on identifying revenue patterns, customer purchasing behavior, and product relationships using Python and data visualization techniques.
 
-The other option is to click the green "clone or download" button and then click "Download ZIP". You then should extract all of the files to the location you want to edit your code.
+---
 
-Installing Jupyter Notebook: https://jupyter.readthedocs.io/en/latest/install.html <br/>
-Installing Pandas library: https://pandas.pydata.org/pandas-docs/stable/install.html 
+## 🎯 Objectives
 
-## Background Information:
+The project answers the following business questions:
 
-This repo goes with [my video](https://youtu.be/eMOA1pPVUc4) on "Solving real world data science videos with Python Pandas!". Here is some information on that video.
+1. What was the best month for sales?
+2. Which city generated the highest revenue?
+3. What time should advertisements be displayed to maximize sales?
+4. Which products are most frequently sold together?
+5. Which products generated the highest revenue?
+6. How do sales vary across days of the week?
+7. What is the average order value?
+8. What are the month-over-month growth trends?
 
-In this video we use Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data. The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc. 
+---
 
-We start by cleaning our data. Tasks during this section include:
-- Drop NaN values from DataFrame
-- Removing rows based on a condition
-- Change the type of columns (to_numeric, to_datetime, astype)
+## 🛠 Tools and Libraries Used
 
-Once we have cleaned up our data a bit, we move the data exploration section. In this section we explore 5 high level business questions related to our data:
-- What was the best month for sales? How much was earned that month?
-- What city sold the most product?
-- What time should we display advertisemens to maximize the likelihood of customer’s buying product?
-- What products are most often sold together?
-- What product sold the most? Why do you think it sold the most?
+* Python
+* Pandas
+* Matplotlib
+* Jupyter Notebook
 
-To answer these questions we walk through many different pandas & matplotlib methods. They include:
-- Concatenating multiple csvs together to create a new DataFrame (pd.concat)
-- Adding columns
-- Parsing cells as strings to make new columns (.str)
-- Using the .apply() method
-- Using groupby to perform aggregate analysis
-- Plotting bar charts and lines graphs to visualize our results
-- Labeling our graphs
+### Python Libraries
 
-Check out the first video I did on Pandas: <br/>
-https://youtu.be/vmEHCJofslg 
+* pandas
+* matplotlib
+* itertools
+* collections
 
-Check out the videos I did on Matplotlib: <br/>
-https://youtu.be/DAQNHzOcO5A <br/>
-https://youtu.be/0P7QnIQDBJY
+---
+
+## 📂 Dataset
+
+The dataset contains sales transactions from January 2019 to December 2019 and includes:
+
+* Order ID
+* Product
+* Quantity Ordered
+* Price Each
+* Order Date
+* Purchase Address
+
+---
+
+## 📈 Analysis Performed
+
+### Data Cleaning
+
+* Removed missing values
+* Removed duplicate header rows
+* Converted columns to appropriate data types
+
+### Feature Engineering
+
+Created:
+
+* Month column
+* Sales column
+* City column
+* Hour column
+* Day column
+
+---
+
+## 📊 Exploratory Data Analysis
+
+### Monthly Sales Analysis
+
+Identified the highest and lowest performing months.
+
+### City-wise Revenue Analysis
+
+Determined which cities contributed the most revenue.
+
+### Advertisement Timing Analysis
+
+Analyzed hourly purchasing patterns to determine optimal advertising times.
+
+### Product Affinity Analysis
+
+Discovered products frequently purchased together using combinations and Counter.
+
+### Top Products by Revenue
+
+Ranked products based on total sales revenue.
+
+### Revenue by Day of Week
+
+Compared revenue across weekdays.
+
+### Average Order Value
+
+Calculated the average amount spent per order.
+
+### Month-over-Month Growth Analysis
+
+Measured percentage growth in sales over time.
+
+---
+
+## 🔍 Key Insights
+
+* December recorded the highest sales.
+* San Francisco generated the highest revenue.
+* Peak order activity occurred around 11 AM and 7 PM.
+* Several products were frequently purchased together.
+* Sales remained relatively stable throughout the week.
+* A small number of products contributed disproportionately to total revenue.
+* Average Order Value was approximately $185.
+* Sales experienced strong growth during the holiday season.
+
+---
+
+## 📷 Visualizations
+
+* Monthly Sales Trend
+* Revenue by City
+* Orders by Hour
+* Product Pair Analysis
+* Top Products by Revenue
+* Revenue by Day of Week
+* Month-over-Month Growth
+
+---
+
+## 🔮 Future Improvements
+
+* Build an interactive Power BI dashboard.
+* Create a Streamlit web application.
+* Perform customer segmentation.
+* Add forecasting models for future sales prediction.
+
+---
+
+## 👩‍💻 Author
+
+**Chhaya Gami**
+
+AI/ML Undergraduate | Aspiring Data Analyst
+
+GitHub: https://github.com/chhaya30
